@@ -128,7 +128,7 @@ body {
   }
   
   .footer-content {
-    max-width: 1200px; /* Limit the width of the footer */
+    max-width: 120px; /* Limit the width of the footer */
     margin: 0 auto; /* Center the footer content */
   }
   
@@ -142,10 +142,11 @@ body {
     margin: 0 10px; /* Space between links */
   }
   
-  .social-media a {
+.social-media a {
     color: white; /* Link color */
     text-decoration: none; /* Remove underline */
-  }
+    font-size: 20px; /* Set a specific size for the icons */
+}
   
   .social-media a:hover {
     text-decoration: underline; /* Underline on hover */
@@ -313,68 +314,63 @@ textarea::-webkit-scrollbar-thumb {
 /* Main content styling */
 /* Main container styles */
 
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px; /* Space around the content */
+/* General Section Styling */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px; /* Add spacing between sections */
 }
 
-main section {
-    margin-top: 20px; /* Space above the section */
+/* Heading Styling */
+h2 {
+    padding: 30px;
+    margin-bottom: 20px;
 }
 
-main section h2 {
-    color: blueviolet;
-    font-size: 24px;
+/* Project and Blog Post Containers */
+.project-container, .blog-post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-/* Article styles for individual projects */
-article {
-    background-color: #ff9d00; /* Project card background */
-    padding: 15px;
-    margin-bottom: 20px; /* Space between project cards */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Center text in articles */
+/* Card Styling */
+.project-card, .blog-post-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    margin: 10px;
 }
 
-/* Header styles within articles */
-article header h3 {
-    font-size: 1.25rem; /* Project title size */
-    margin-bottom: 5px; /* Space below the title */
-    color: #333;
+/* Image Styling */
+.project-card img, .blog-post-card img {
+    width: 100%;
+    border-radius: 10px;
 }
 
-article p {
-    margin: 10px 0; /* Space above and below completion date */
+/* Card Text Styling */
+.project-card h3, .blog-post-card h3 {
+    margin: 10px 0;
 }
 
-/* Figure styles for images */
-figure {
-    margin: 15px 0; /* Space above and below figures */
+.project-card p, .blog-post-card p {
+    margin: 5px 0;
 }
 
-figure img {
-    width: 100%; /* Image takes full width of the figure */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Rounded corners for images */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.955); /* Shadow for images */
+/* Link Styling */
+.blog-post-card a, .project-card a {
+    color: #fff;
+    text-decoration: none;
 }
 
-figcaption {
-    font-size: 0.9rem; /* Smaller caption text */
-    color: #555; /* Caption text color */
-    margin-top: 5px; /* Space above the caption */
+/* Optional: Add a border between sections for clarity */
+.latest-projects {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
 }
 
-/* Footer link styles */
-article footer a {
-    color: #cc0000; /* Link color */
-    text-decoration: none; /* No underline by default */
-    font-weight: bold; /* Bold link text */
+.blog-posts {
+    padding-top: 20px;
 }
-
-article footer a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
